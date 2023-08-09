@@ -11,7 +11,7 @@ When you invoke your HTTP API, API Gateway routes the request to your Lambda fun
     
 To complete this exercise, you need an AWS account and an AWS Identity and Access Management user with console access. 
 
-Topics
+Procedure
 
 Step 1: Create a DynamoDB table
 
@@ -28,6 +28,7 @@ Step 6: Attach your integration to routes
 Step 7: Test your API
 
 Step 8: Clean up
+
 
 Step 1: Create a DynamoDB table
 
