@@ -92,6 +92,7 @@ Open index.mjs in the console's code editor, and replace its contents with the f
 
 Step 3: Create an HTTP API
 
+
 The HTTP API provides an HTTP endpoint for your Lambda function. In this step, you create an empty API. In the following steps, you configure routes and integrations to connect your API and your Lambda function.
 
 Choose Create API, and then for HTTP API, choose Build.
@@ -119,6 +120,7 @@ PUT /items
 DELETE /items/{id}
 
 To create routes
+
 Sign in to the API Gateway console at https://console.aws.amazon.com/apigateway.
 
 Choose your API.
@@ -202,11 +204,14 @@ Copy your API's invoke URL.
 The full URL looks like https://abcdef123.execute-api.us-west-2.amazonaws.com.
 
 To create or update an item
+
 Use the following command to create or update an item. The command includes a request body with the item's ID, price, and name.
 
 
 curl -X "PUT" -H "Content-Type: application/json" -d "{\"id\": \"123\", \"price\": 12345, \"name\": \"myitem\"}" https://abcdef123.execute-api.us-west-2.amazonaws.com/items
+
 To get all items
+
 Use the following command to list all items.
 
 
