@@ -79,6 +79,13 @@ This tutorial uses a managed policy for simplicity. As a best practice, you shou
 
 Choose Create function.
 
+<img width="1108" alt="Screenshot 2023-08-09 at 21 40 12" src="https://github.com/Mamiololo01/Build-a-CRUD-API-with-Lambda-and-DynamoDB/assets/67044030/f2089baa-57c9-4b7c-97cf-200825fb3ee2">
+
+<img width="1132" alt="Screenshot 2023-08-09 at 21 40 42" src="https://github.com/Mamiololo01/Build-a-CRUD-API-with-Lambda-and-DynamoDB/assets/67044030/fee6599d-0bab-4a0e-8ee5-47dcb42d7d0f">
+
+<img width="1182" alt="Screenshot 2023-08-09 at 21 41 13" src="https://github.com/Mamiololo01/Build-a-CRUD-API-with-Lambda-and-DynamoDB/assets/67044030/907a3d42-b983-403f-ac4a-28a60c318e6c">
+
+
 Open index.mjs in the console's code editor, and replace its contents with the following code. Choose Deploy to update your function.
 
 
