@@ -91,14 +91,12 @@ Open index.mjs in the console's code editor, and replace its contents with the f
 
 
 Step 3: Create an HTTP API
-The HTTP API provides an HTTP endpoint for your Lambda function. In this step, you create an empty API. In the following steps, you configure routes and integrations to connect your API and your Lambda function.
 
-To create an HTTP API
-Sign in to the API Gateway console at https://console.aws.amazon.com/apigateway.
+The HTTP API provides an HTTP endpoint for your Lambda function. In this step, you create an empty API. In the following steps, you configure routes and integrations to connect your API and your Lambda function.
 
 Choose Create API, and then for HTTP API, choose Build.
 
-For API name, enter http-crud-tutorial-api.
+For API name, enter httpcrudapi.
 
 Choose Next.
 
@@ -109,6 +107,7 @@ Review the stage that API Gateway creates for you, and then choose Next.
 Choose Create.
 
 Step 4: Create routes
+
 Routes are a way to send incoming API requests to backend resources. Routes consist of two parts: an HTTP method and a resource path, for example, GET /items. For this example API, we create four routes:
 
 GET /items/{id}
