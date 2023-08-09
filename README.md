@@ -187,6 +187,14 @@ All routes show that an AWS Lambda integration is attached.
       
 Now that you have an HTTP API with routes and integrations, you can test your API.
 
+<img width="864" alt="Screenshot 2023-08-09 at 22 10 34" src="https://github.com/Mamiololo01/Build-a-CRUD-API-with-Lambda-and-DynamoDB/assets/67044030/c9095dd9-d2ff-4e18-91da-33acaa7bd50a">
+
+<img width="1206" alt="Screenshot 2023-08-09 at 22 10 42" src="https://github.com/Mamiololo01/Build-a-CRUD-API-with-Lambda-and-DynamoDB/assets/67044030/71e06cb4-ecdf-4b29-913f-937325c75f8a">
+
+<img width="1224" alt="Screenshot 2023-08-09 at 22 13 09" src="https://github.com/Mamiololo01/Build-a-CRUD-API-with-Lambda-and-DynamoDB/assets/67044030/6488487f-16d2-45ee-aea4-646f619ee60a">
+
+<img width="1259" alt="Screenshot 2023-08-09 at 22 13 56" src="https://github.com/Mamiololo01/Build-a-CRUD-API-with-Lambda-and-DynamoDB/assets/67044030/01802862-7863-416e-82be-426d733cb606">
+
 Step 7: Test your API
 
 To make sure that your API is working, you use curl.
