@@ -56,6 +56,7 @@ Choose Create table.
 
 
 Step 2: Create a Lambda function
+
 You create a Lambda function for the backend of your API. This Lambda function creates, reads, updates, and deletes items from DynamoDB. The function uses events from API Gateway to determine how to interact with DynamoDB. For simplicity this tutorial uses a single Lambda function. As a best practice, you should create separate functions for each route.
 
 To create a Lambda function
@@ -64,17 +65,16 @@ Sign in to the Lambda console at https://console.aws.amazon.com/lambda.
 
 Choose Create function.
 
-For Function name, enter http-crud-tutorial-function.
+For Function name, enter httpcrudlambda
 
 Under Permissions choose Change default execution role.
 
 Select Create a new role from AWS policy templates.
 
-For Role name, enter http-crud-tutorial-role.
+For Role name, enter httpcrudlambdarole
 
 For Policy templates, choose Simple microservice permissions. This policy grants the Lambda function permission to interact with DynamoDB.
 
-Note
 This tutorial uses a managed policy for simplicity. As a best practice, you should create your own IAM policy to grant the minimum permissions required.
 
 Choose Create function.
