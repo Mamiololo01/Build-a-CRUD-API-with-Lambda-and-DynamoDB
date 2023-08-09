@@ -137,14 +137,13 @@ Choose Create.
 
 Repeat steps 4-7 for GET /items, DELETE /items/{id}, and PUT /items.
 
-
-        Your API has routes for GET /items, GET /items/{id},DELETE
-            /items/{id}, and PUT /items.
       
 Step 5: Create an integration
+
 You create an integration to connect a route to backend resources. For this example API, you create one Lambda integration that you use for all routes.
 
 To create an integration
+
 Sign in to the API Gateway console at https://console.aws.amazon.com/apigateway.
 
 Choose your API.
@@ -162,9 +161,11 @@ For Lambda function, enter http-crud-tutorial-function.
 Choose Create.
 
 Step 6: Attach your integration to routes
+
 For this example API, you use the same Lambda integration for all routes. After you attach the integration to all of the API's routes, your Lambda function is invoked when a client calls any of your routes.
 
 To attach integrations to routes
+
 Sign in to the API Gateway console at https://console.aws.amazon.com/apigateway.
 
 Choose your API.
@@ -187,17 +188,16 @@ All routes show that an AWS Lambda integration is attached.
 Now that you have an HTTP API with routes and integrations, you can test your API.
 
 Step 7: Test your API
+
 To make sure that your API is working, you use curl.
 
 To get the URL to invoke your API
+
 Sign in to the API Gateway console at https://console.aws.amazon.com/apigateway.
 
 Choose your API.
 
 Note your API's invoke URL. It appears under Invoke URL on the Details page.
-
-
-            After you create your API, the console shows your API's invoke URL.
           
 Copy your API's invoke URL.
 
@@ -207,7 +207,6 @@ To create or update an item
 
 Use the following command to create or update an item. The command includes a request body with the item's ID, price, and name.
 
-
 curl -X "PUT" -H "Content-Type: application/json" -d "{\"id\": \"123\", \"price\": 12345, \"name\": \"myitem\"}" https://qvnj5pxkqe.execute-api.us-east-1.amazonaws.com
 
 To get all items
@@ -216,24 +215,32 @@ Use the following command to list all items.
 
 
 curl https://abcdef123.execute-api.us-west-2.amazonaws.com/items
+
 To get an item
+
 Use the following command to get an item by its ID.
 
 
 curl https://abcdef123.execute-api.us-west-2.amazonaws.com/items/123
+
 To delete an item
+
 Use the following command to delete an item.
 
 
 curl -X "DELETE" https://abcdef123.execute-api.us-west-2.amazonaws.com/items/123
+
 Get all items to verify that the item was deleted.
 
 
 curl https://abcdef123.execute-api.us-west-2.amazonaws.com/items
+
 Step 8: Clean up
+
 To prevent unnecessary costs, delete the resources that you created as part of this getting started exercise. The following steps delete your HTTP API, your Lambda function, and associated resources.
 
 To delete a DynamoDB table
+
 Open the DynamoDB console at https://console.aws.amazon.com/dynamodb/.
 
 Select your table.
@@ -243,6 +250,7 @@ Choose Delete table.
 Confirm your choice, and choose Delete.
 
 To delete an HTTP API
+
 Sign in to the API Gateway console at https://console.aws.amazon.com/apigateway.
 
 On the APIs page, select an API. Choose Actions, and then choose Delete.
@@ -250,6 +258,7 @@ On the APIs page, select an API. Choose Actions, and then choose Delete.
 Choose Delete.
 
 To delete a Lambda function
+
 Sign in to the Lambda console at https://console.aws.amazon.com/lambda.
 
 On the Functions page, select a function. Choose Actions, and then choose Delete.
@@ -257,6 +266,7 @@ On the Functions page, select a function. Choose Actions, and then choose Delete
 Choose Delete.
 
 To delete a Lambda function's log group
+
 In the Amazon CloudWatch console, open the Log groups page.
 
 On the Log groups page, select the function's log group (/aws/lambda/http-crud-tutorial-function). Choose Actions, and then choose Delete log group.
@@ -264,6 +274,7 @@ On the Log groups page, select the function's log group (/aws/lambda/http-crud-t
 Choose Delete.
 
 To delete a Lambda function's execution role
+
 In the AWS Identity and Access Management console, open the Roles page.
 
 Select the function's role, for example, http-crud-tutorial-role.
