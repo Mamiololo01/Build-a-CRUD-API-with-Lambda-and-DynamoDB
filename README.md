@@ -208,7 +208,7 @@ To create or update an item
 Use the following command to create or update an item. The command includes a request body with the item's ID, price, and name.
 
 
-curl -X "PUT" -H "Content-Type: application/json" -d "{\"id\": \"123\", \"price\": 12345, \"name\": \"myitem\"}" https://abcdef123.execute-api.us-west-2.amazonaws.com/items
+curl -X "PUT" -H "Content-Type: application/json" -d "{\"id\": \"123\", \"price\": 12345, \"name\": \"myitem\"}" https://qvnj5pxkqe.execute-api.us-east-1.amazonaws.com
 
 To get all items
 
