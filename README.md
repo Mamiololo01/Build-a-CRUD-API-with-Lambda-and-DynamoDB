@@ -48,6 +48,13 @@ For Partition key, enter id.
 
 Choose Create table.
 
+<img width="919" alt="Screenshot 2023-08-09 at 21 30 11" src="https://github.com/Mamiololo01/Build-a-CRUD-API-with-Lambda-and-DynamoDB/assets/67044030/e3875b01-8ea1-40cf-b58e-4ce8a1be2c3e">
+
+<img width="866" alt="Screenshot 2023-08-09 at 21 30 22" src="https://github.com/Mamiololo01/Build-a-CRUD-API-with-Lambda-and-DynamoDB/assets/67044030/79f861f6-5b4c-4d7f-b52e-fe11f37a685f">
+
+<img width="929" alt="Screenshot 2023-08-09 at 21 31 53" src="https://github.com/Mamiololo01/Build-a-CRUD-API-with-Lambda-and-DynamoDB/assets/67044030/b409c5d1-efee-4038-bf13-49e93e426d59">
+
+
 Step 2: Create a Lambda function
 You create a Lambda function for the backend of your API. This Lambda function creates, reads, updates, and deletes items from DynamoDB. The function uses events from API Gateway to determine how to interact with DynamoDB. For simplicity this tutorial uses a single Lambda function. As a best practice, you should create separate functions for each route.
 
