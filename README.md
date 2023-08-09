@@ -1,43 +1,47 @@
 # Build-a-CRUD-API-with-Lambda-and-DynamoDB
+
 Build a CRUD API with Lambda and DynamoDB
 
 In this tutorial, you create a serverless API that creates, reads, updates, and deletes items from a DynamoDB table. DynamoDB is a fully managed NoSQL database service that provides fast and predictable performance with seamless scalability. This tutorial takes approximately 30 minutes to complete, and you can do it within the AWS Free Tier.
 
-First, you create a DynamoDB table using the DynamoDB console. Then you create a Lambda function using the AWS Lambda console. Next, you create an HTTP API using the API Gateway console. Lastly, you test your API.
+First, you create a DynamoDB table using the DynamoDB console, hen you create a Lambda function using the AWS Lambda console. Next, you create an HTTP API using the API Gateway console. Lastly, you test your API.
 
 When you invoke your HTTP API, API Gateway routes the request to your Lambda function. The Lambda function interacts with DynamoDB, and returns a response to API Gateway. API Gateway then returns a response to you.
 
-
-      Architectural overview of the API that you create in this tutorial. Clients use an API Gateway HTTP API to
-        invoke a Lambda function. The Lambda function interacts with DynamoDB and then returns a response to
-        clients.
     
-To complete this exercise, you need an AWS account and an AWS Identity and Access Management user with console access. For more information, see Prerequisites for getting started with API Gateway.
-
-In this tutorial, you use the AWS Management Console. For an AWS SAM template that creates this API and all related resources, see template.yaml.
+To complete this exercise, you need an AWS account and an AWS Identity and Access Management user with console access. 
 
 Topics
 
 Step 1: Create a DynamoDB table
+
 Step 2: Create a Lambda function
+
 Step 3: Create an HTTP API
+
 Step 4: Create routes
+
 Step 5: Create an integration
+
 Step 6: Attach your integration to routes
+
 Step 7: Test your API
+
 Step 8: Clean up
-Next steps: Automate with AWS SAM or AWS CloudFormation
+
 Step 1: Create a DynamoDB table
+
 You use a DynamoDB table to store data for your API.
 
 Each item has a unique ID, which we use as the partition key for the table.
 
 To create a DynamoDB table
+
 Open the DynamoDB console at https://console.aws.amazon.com/dynamodb/.
 
 Choose Create table.
 
-For Table name, enter http-crud-tutorial-items.
+For Table name, enter httpcrud-db
 
 For Partition key, enter id.
 
@@ -47,6 +51,7 @@ Step 2: Create a Lambda function
 You create a Lambda function for the backend of your API. This Lambda function creates, reads, updates, and deletes items from DynamoDB. The function uses events from API Gateway to determine how to interact with DynamoDB. For simplicity this tutorial uses a single Lambda function. As a best practice, you should create separate functions for each route.
 
 To create a Lambda function
+
 Sign in to the Lambda console at https://console.aws.amazon.com/lambda.
 
 Choose Create function.
